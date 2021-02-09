@@ -1,0 +1,31 @@
+ALGORITHM algorithm_name
+VAR
+set1 : ARRAY_OF INTEGER[5];
+    set2 : ARRAY_OF INTEGER[5];
+    j : INTEGER;
+    i:INTEGER;
+BEGIN
+    set1:={1,2,3,4,5};
+    set2:={1,5,7,8,9};
+    FOR i FROM 0 TO 4 STEP 1  DO
+    j:=0;
+    WHILE (j < 5) DO
+    
+    
+    IF  (set1[i] = set2[j]) THEN
+    s:=s+set1[i];
+        j:= 5;
+    ELSE
+    
+            j := j+1;
+                
+        
+            
+            
+    END_IF 
+    
+    END_WHILE
+        
+        
+    END_FOR
+    END
